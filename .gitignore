@@ -1,1 +1,5 @@
 .vercel
+*.avif
+*.png
+*.jpg
+*.jpeg
