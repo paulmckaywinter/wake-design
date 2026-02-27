@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Wake Design Co.</title>
+  <meta name="description" content="Meet the team behind Wake Design Co. — designers and boat enthusiasts passionate about maritime branding." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .mission-section {
+      background: var(--navy);
+      padding: 8rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .mission-section h2 { color: var(--white); }
+    .mission-section p { color: rgba(255,255,255,.65); font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.25rem; }
+    .mission-section .eyebrow { color: var(--gold-lt); }
+
+    .big-quote {
+      background: var(--cream);
+      padding: 7rem 4rem;
+      text-align: center;
+    }
+    .big-quote blockquote {
+      font-family: var(--font-d);
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 300;
+      color: var(--navy);
+      max-width: 1100px;
+      margin: 0 auto;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+    .big-quote blockquote em { color: var(--gold); font-style: italic; }
+
+    .press-strip {
+      background: var(--sand);
+      padding: 3rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      flex-wrap: wrap;
+    }
+    .press-label {
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+    .press-item {
+      font-family: var(--font-d);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: rgba(9,25,41,.3);
+      letter-spacing: -0.01em;
+    }
+
+    @media (max-width: 900px) {
+      .mission-section {
+        grid-template-columns: 1fr;
+        padding: 5rem 1.5rem;
+        gap: 2.5rem;
+      }
+      .big-quote { padding: 5rem 1.5rem; }
+      .press-strip { gap: 2rem; padding: 2.5rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scroll-progress"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav transparent" data-transparent="true" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">WAKE<span>.</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="packages.html" class="nav-cta">Get Started</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://picsum.photos/seed/73/1920/1080');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow reveal">Our Studio</span>
+      <h1 class="reveal delay-1">We Are <em>Wake.</em></h1>
+      <p class="hero-sub reveal delay-2">Designers who live on the water. Branders who understand the culture of the sea.</p>
+    </div>
+  </section>
+
+  <!-- ===== BIG QUOTE ===== -->
+  <div class="big-quote">
+    <blockquote class="reveal">
+      "Every vessel that sets out deserves a name<br>worthy of the <em>water it crosses.</em>"
+    </blockquote>
+  </div>
+
+  <!-- ===== OUR STORY ===== -->
+  <section class="mission-section">
+    <div>
+      <span class="eyebrow reveal">Our Story</span>
+      <h2 class="reveal delay-1">Born on the water,<br>built for the water.</h2>
+    </div>
+    <div>
+      <p class="reveal">Wake Design Co. was founded in 2017 by a pair of designers who were tired of seeing beautiful boats with generic, uninspired names slapped on their sterns with off-the-shelf decal fonts.</p>
+      <p class="reveal delay-1">We believed — and still believe — that a vessel deserves the same creative care as any other brand. Whether it's a 14-foot aluminum fishing boat or a 100-foot superyacht, every boat is a statement about its owner.</p>
+      <p class="reveal delay-2">Eight years later, we've branded over 340 vessels across 30+ states and 12 countries. Our studio remains small, intentional, and obsessively focused on maritime design.</p>
+    </div>
+  </section>
+
+  <!-- ===== STAT STRIP ===== -->
+  <div class="stat-strip">
+    <div class="stat-item reveal">
+      <span class="stat-num"><span data-count="340" data-suffix="+">0+</span></span>
+      <span class="stat-lbl">Vessels Branded</span>
+    </div>
+    <div class="stat-item reveal delay-1">
+      <span class="stat-num"><span data-count="8">0</span></span>
+      <span class="stat-lbl">Years in Business</span>
+    </div>
+    <div class="stat-item reveal delay-2">
+      <span class="stat-num"><span data-count="30" data-suffix="+">0+</span></span>
+      <span class="stat-lbl">States Served</span>
+    </div>
+    <div class="stat-item reveal delay-3">
+      <span class="stat-num"><span data-count="12">0</span></span>
+      <span class="stat-lbl">Countries</span>
+    </div>
+  </div>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow reveal">How We Work</span>
+        <h2 class="reveal delay-1">A process built for<br><em style="color:var(--gold); font-style:italic;">serious craft.</em></h2>
+        <p class="reveal delay-2">We don't use templates. Every project starts with a blank page and a genuine curiosity about your vessel's story.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <h4>Discovery</h4>
+          <p>We learn everything about you, your boat, and how you spend your time on the water. The brief isn't a form — it's a conversation.</p>
+        </div>
+        <div class="process-step reveal delay-1">
+          <div class="step-num">02</div>
+          <h4>Research</h4>
+          <p>We study your vessel type, the maritime traditions connected to it, and the visual language that resonates with your lifestyle.</p>
+        </div>
+        <div class="process-step reveal delay-2">
+          <div class="step-num">03</div>
+          <h4>Design</h4>
+          <p>Three unique concept directions, each telling a different story. We present them in context — on boats, on hats, on the water.</p>
+        </div>
+        <div class="process-step reveal delay-3">
+          <div class="step-num">04</div>
+          <h4>Delivery</h4>
+          <p>A complete file package, placement guides, and ongoing support. Your brand is built to last as long as your boat does.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow reveal">The Team</span>
+        <h2 class="reveal delay-1">Small studio.<br><em style="color:var(--gold); font-style:italic;">Big vision.</em></h2>
+        <p class="reveal delay-2">We're a deliberately small team of designers, strategists, and devoted boat people. Every project is touched by a senior designer — no junior handoffs.</p>
+      </div>
+      <div class="team-grid" style="max-width:960px; margin:0 auto;">
+        <div class="team-member reveal">
+          <div class="team-photo img-wrap">
+            <img src="https://picsum.photos/seed/115/600/600" alt="Marcus Webb — Creative Director" loading="lazy" />
+          </div>
+          <div class="team-name">Marcus Webb</div>
+          <div class="team-role">Creative Director &amp; Co-Founder</div>
+          <p style="margin-top:0.75rem; font-size:0.88rem; color:var(--text-2); line-height:1.75;">Spends weekends on his 28ft Grady-White. Believes every boat name should sound good when you yell it into the wind.</p>
+        </div>
+        <div class="team-member reveal delay-2">
+          <div class="team-photo img-wrap">
+            <img src="https://picsum.photos/seed/122/600/600" alt="Claire Navarro — Lead Designer" loading="lazy" />
+          </div>
+          <div class="team-name">Claire Navarro</div>
+          <div class="team-role">Lead Designer &amp; Co-Founder</div>
+          <p style="margin-top:0.75rem; font-size:0.88rem; color:var(--text-2); line-height:1.75;">Former luxury brand designer turned full-time nautical identity specialist. Sails competitively in the Pacific Northwest.</p>
+        </div>
+        <div class="team-member reveal delay-4">
+          <div class="team-photo img-wrap">
+            <img src="https://picsum.photos/seed/129/600/600" alt="Ray Castillo — Brand Strategist" loading="lazy" />
+          </div>
+          <div class="team-name">Ray Castillo</div>
+          <div class="team-role">Brand Strategist</div>
+          <p style="margin-top:0.75rem; font-size:0.88rem; color:var(--text-2); line-height:1.75;">Deep-sea fishing captain turned brand strategist. Bridges the gap between the mariner's world and the design studio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPLIT — STUDIO IMAGE ===== -->
+  <div class="split">
+    <div class="split-img img-wrap">
+      <img src="https://picsum.photos/seed/87/1200/800" alt="Team on a client vessel for a brand shoot" loading="lazy" />
+    </div>
+    <div class="split-body">
+      <span class="eyebrow reveal">Our Philosophy</span>
+      <h2 class="reveal delay-1">Design that lives<br>in the real world.</h2>
+      <p class="reveal delay-2">We never show a design on a screen. Every concept is mocked up on an actual hull, worn on actual hats, printed on actual shirts. Because your brand has to work on the water — not just in a presentation.</p>
+      <p class="reveal delay-3">We test our work in sunlight, in salt air, and at speed. That's the Wake standard.</p>
+    </div>
+  </div>
+
+  <!-- ===== VALUES ===== -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow reveal">What We Stand For</span>
+        <h2 class="reveal delay-1">Our values on the<br><em style="color:var(--gold); font-style:italic;">and off</em> the water.</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-num">01</div>
+          <h4>Craft Over Speed</h4>
+          <p>We take the time to do it right. Rushed design is as dangerous at the helm as it is on the drawing board. Every project gets the patience it deserves.</p>
+        </div>
+        <div class="value-card reveal delay-2">
+          <div class="value-num">02</div>
+          <h4>Maritime Authenticity</h4>
+          <p>We draw from real maritime traditions, nautical history, and water culture — not generic design trends. Your boat's brand should feel like it belongs on the water.</p>
+        </div>
+        <div class="value-card reveal delay-1">
+          <div class="value-num">03</div>
+          <h4>Every Boat Matters</h4>
+          <p>We bring the same creative energy to a 14-foot aluminum bass boat as we do to a million-dollar superyacht. No boat is too small for great design.</p>
+        </div>
+        <div class="value-card reveal delay-3">
+          <div class="value-num">04</div>
+          <h4>Transparency Always</h4>
+          <p>No hidden fees, no bait-and-switch upsells, no vague timelines. From quote to delivery, you always know exactly where we are and what to expect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRESS STRIP ===== -->
+  <div class="press-strip">
+    <span class="press-label">As Seen In</span>
+    <span class="press-item">Boating Magazine</span>
+    <span class="press-item">Cruising World</span>
+    <span class="press-item">Yachting</span>
+    <span class="press-item">Sport Fishing</span>
+    <span class="press-item">Sail Magazine</span>
+  </div>
+
+  <!-- ===== TESTIMONIAL ===== -->
+  <section class="testimonial">
+    <span class="eyebrow reveal">What Our Clients Say</span>
+    <blockquote class="testi-quote reveal delay-1">
+      "Wake Design didn't just give us a logo — they gave us an identity. Every time we're out on the water, the brand speaks for itself. It's become part of who we are as a family."
+    </blockquote>
+    <p class="testi-attr reveal delay-2">— <strong>The Hartwell Family</strong>, Storm Chaser &nbsp;·&nbsp; Newport, Rhode Island</p>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <div class="cta-banner">
+    <h2 class="reveal">Let's brand your<br><em>next adventure.</em></h2>
+    <div class="reveal delay-2">
+      <a href="packages.html" class="btn btn-primary btn-arrow">Start Your Project</a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">WAKE<span>.</span></a>
+        <p>Crafting iconic identities for vessels of every size. From the first sketch to your hull — we brand your adventure.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="packages.html">Vessel Naming</a></li>
+          <li><a href="packages.html">Logo Design</a></li>
+          <li><a href="packages.html">Crew Swag</a></li>
+          <li><a href="packages.html">Full Branding</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:hello@wakedesign.co">hello@wakedesign.co</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Behance</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Wake Design Co. All rights reserved.</span>
+      <span>Crafted with passion for the water.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

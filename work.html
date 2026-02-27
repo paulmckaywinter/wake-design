@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work — Wake Design Co.</title>
+  <meta name="description" content="Browse our portfolio of boat branding projects — vessel naming, logos, and crew swag for boats of every size." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="scroll-progress"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav transparent" data-transparent="true" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">WAKE<span>.</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="packages.html" class="nav-cta">Get Started</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://picsum.photos/seed/108/1920/1080');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow reveal">Portfolio</span>
+      <h1 class="reveal delay-1">Our <em>Work.</em></h1>
+      <p class="hero-sub reveal delay-2">Every vessel has a story. We help you tell it beautifully.</p>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY INTRO ===== -->
+  <section class="section-sm" style="background: var(--cream);">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:2rem; margin-bottom:3rem;">
+        <div>
+          <span class="eyebrow reveal">Browse by Category</span>
+          <h2 class="reveal delay-1">340+ vessels<br>and counting.</h2>
+        </div>
+        <p class="reveal delay-2" style="max-width:420px; color:var(--text-2); font-size:1rem; line-height:1.85;">
+          From 14-foot bass boats to 120-foot superyachts — every project receives the same dedication to craft and detail.
+        </p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="naming">Vessel Naming</button>
+        <button class="filter-btn" data-filter="logo">Logo Design</button>
+        <button class="filter-btn" data-filter="swag">Crew Swag</button>
+        <button class="filter-btn" data-filter="full">Full Brand</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+
+        <div class="gallery-item img-wrap reveal" data-cat="full">
+          <img src="https://picsum.photos/seed/10/900/600" alt="Luxury superyacht — True North" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Full Brand</span>
+              <h4>True North — 98ft Superyacht</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal delay-1" data-cat="naming">
+          <img src="https://picsum.photos/seed/24/900/600" alt="Sport fishing boat naming" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Vessel Naming</span>
+              <h4>Offshore — 38ft Sport Fisher</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal delay-2" data-cat="swag">
+          <img src="https://picsum.photos/seed/87/900/600" alt="Crew in branded gear on deck" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Crew Swag</span>
+              <h4>Island Time — Charter Fleet</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal" data-cat="logo">
+          <img src="https://picsum.photos/seed/17/900/600" alt="Sailboat — Meridian branding" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Logo Design</span>
+              <h4>Meridian — 52ft Sloop</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal delay-1" data-cat="full">
+          <img src="https://picsum.photos/seed/59/900/600" alt="Marina at sunrise — full branding" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Full Brand</span>
+              <h4>Sunrise — 44ft Motor Yacht</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal delay-2" data-cat="naming">
+          <img src="https://picsum.photos/seed/94/900/600" alt="Bass boat naming" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Vessel Naming</span>
+              <h4>First Cast — 17ft Bass Boat</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal" data-cat="swag">
+          <img src="https://picsum.photos/seed/101/900/600" alt="People in crew shirts on bow" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Crew Swag</span>
+              <h4>High Tide — Dive Charter</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal delay-1" data-cat="logo">
+          <img src="https://picsum.photos/seed/31/900/600" alt="Catamaran — logo branding" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Logo Design</span>
+              <h4>The Wanderer — 40ft Cat</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal delay-2" data-cat="full">
+          <img src="https://picsum.photos/seed/73/900/600" alt="Superyacht at sea — Storm Chaser" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Full Brand</span>
+              <h4>Storm Chaser — 78ft Yacht</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal" data-cat="naming">
+          <img src="https://picsum.photos/seed/38/900/600" alt="Pontoon boat naming" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Vessel Naming</span>
+              <h4>Lake Days — 24ft Pontoon</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal delay-1" data-cat="swag">
+          <img src="https://picsum.photos/seed/80/900/600" alt="Captain wearing branded hat at helm" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Crew Swag</span>
+              <h4>Latitude — Charter Captain's Gear</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item img-wrap reveal delay-2" data-cat="logo">
+          <img src="https://picsum.photos/seed/45/900/600" alt="Powerboat — Renegade logo design" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span>Logo Design</span>
+              <h4>Renegade — 31ft Powerboat</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED CASE STUDY ===== -->
+  <div class="split" style="margin-top:2px;">
+    <div class="split-body">
+      <span class="eyebrow reveal">Case Study</span>
+      <h2 class="reveal delay-1">First Light Charters —<br><em style="font-style:italic;">A Complete Rebrand.</em></h2>
+      <p class="reveal delay-2">Captain James came to us with a 42-foot fishing charter and zero visual identity. We built everything from scratch — a custom name treatment, a hook-and-compass logo mark, and a full crew kit including performance shirts, caps, and deck bags.</p>
+      <p class="reveal delay-3">The result? A 40% increase in bookings in the first season, driven largely by word-of-mouth and social media attention on their distinctive look.</p>
+      <a href="packages.html" class="btn btn-primary btn-arrow reveal delay-4" style="margin-top:.5rem;">Start Your Project</a>
+    </div>
+    <div class="split-img img-wrap">
+      <img src="https://picsum.photos/seed/66/1200/800" alt="First Light Charters — boat at dock" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow reveal">Client Stories</span>
+        <h2 class="reveal delay-1">They had a boat.<br><em style="font-style:italic; color:var(--gold);">Now they have a brand.</em></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>"The logo they designed for our pontoon is absolute perfection. Simple, clean, and looks incredible on hats. Everyone at the lake asks where we got it."</blockquote>
+          <cite>Mike & Sara Chen</cite><br>
+          <span class="vessel">Lake Days — Pontoon Boat, Lake Tahoe</span>
+        </div>
+        <div class="testi-card reveal delay-2">
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>"I wanted something worthy of a 78-foot yacht. Wake Design delivered something that looks like it belongs on the side of a superyacht. Professional, timeless, stunning."</blockquote>
+          <cite>Robert Hartwell</cite><br>
+          <span class="vessel">Storm Chaser — Motor Yacht, Newport, RI</span>
+        </div>
+        <div class="testi-card reveal delay-4">
+          <div class="testi-stars">★★★★★</div>
+          <blockquote>"From my 17-foot bass boat to a full crew kit — these guys treated my little fishing boat like it was a million-dollar vessel. I'll never go anywhere else."</blockquote>
+          <cite>Tommy Broussard</cite><br>
+          <span class="vessel">First Cast — Bass Boat, Louisiana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <div class="cta-banner">
+    <h2 class="reveal">Your boat is waiting<br>for its <em>identity.</em></h2>
+    <div class="reveal delay-2">
+      <a href="packages.html" class="btn btn-primary btn-arrow">Choose a Package</a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">WAKE<span>.</span></a>
+        <p>Crafting iconic identities for vessels of every size. From the first sketch to your hull — we brand your adventure.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="packages.html">Vessel Naming</a></li>
+          <li><a href="packages.html">Logo Design</a></li>
+          <li><a href="packages.html">Crew Swag</a></li>
+          <li><a href="packages.html">Full Branding</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:hello@wakedesign.co">hello@wakedesign.co</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Behance</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Wake Design Co. All rights reserved.</span>
+      <span>Crafted with passion for the water.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

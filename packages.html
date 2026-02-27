@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Packages — Wake Design Co.</title>
+  <meta name="description" content="Choose from our three vessel branding packages. Naming, logo design, crew swag, and full brand experiences for every boat owner." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Packages-specific additions */
+    .compare-table { width: 100%; border-collapse: collapse; margin-top: 3rem; }
+    .compare-table th, .compare-table td {
+      padding: 1rem 1.4rem; text-align: left;
+      border-bottom: 1px solid var(--sand); font-size: 0.88rem;
+    }
+    .compare-table th { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--navy); padding-top: 1.4rem; }
+    .compare-table td.check { text-align: center; font-size: 1rem; }
+    .compare-table tr:hover td { background: var(--cream); }
+    .compare-table td.pkg-col { font-weight: 700; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+    .check-yes { color: #2ECC71; font-size: 1.1rem; }
+    .check-no { color: var(--gray); font-size: 0.9rem; opacity: 0.5; }
+    .check-par { color: var(--gold); }
+
+    .addon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--sand); margin-top: 3rem; }
+    .addon-card { background: var(--white); padding: 2.5rem; }
+    .addon-card h4 { margin-bottom: 0.4rem; }
+    .addon-card p { font-size: 0.88rem; color: var(--text-2); line-height: 1.75; margin-bottom: 1rem; }
+    .addon-price { font-family: var(--font-d); font-size: 1.8rem; font-weight: 400; color: var(--gold); }
+
+    @media (max-width: 900px) {
+      .addon-grid { grid-template-columns: 1fr; }
+      .compare-table { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="scroll-progress"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav transparent" data-transparent="true" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">WAKE<span>.</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="packages.html" class="nav-cta">Get Started</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://picsum.photos/seed/31/1920/1080');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow reveal">Pricing</span>
+      <h1 class="reveal delay-1">Choose Your <em>Package.</em></h1>
+      <p class="hero-sub reveal delay-2">Simple, transparent pricing. No hidden fees. Built for every captain, from first-timers to fleet owners.</p>
+    </div>
+  </section>
+
+  <!-- ===== PACKAGES GRID ===== -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow reveal">Our Packages</span>
+        <h2 class="reveal delay-1">Three ways to brand<br><em style="font-style:italic; color:var(--gold);">your vessel.</em></h2>
+        <p class="reveal delay-2">Every package includes our dedicated designer, unlimited revisions, and lifetime digital file ownership.</p>
+      </div>
+
+      <div class="packages-grid">
+
+        <!-- Package 1: First Mate -->
+        <div class="pkg-card reveal">
+          <div class="pkg-name">Package One</div>
+          <h3 class="pkg-title">First Mate</h3>
+          <p class="pkg-desc">The perfect starting point for new boat owners who want a professional name design without the full brand commitment.</p>
+          <div class="pkg-price">
+            <div class="price-wrap">
+              <span class="price-cur">$</span>
+              <span class="price-amt">299</span>
+            </div>
+            <p class="price-note">One-time payment · Delivered in 5–7 days</p>
+          </div>
+          <ul class="pkg-features">
+            <li>Custom vessel name typography</li>
+            <li>3 initial concept directions</li>
+            <li>Unlimited revisions (round 1–3)</li>
+            <li>Print-ready & vinyl-cut files</li>
+            <li>2 color variations included</li>
+            <li>1-year design support</li>
+          </ul>
+          <a href="#order" class="btn btn-ghost btn-arrow" style="width:100%; justify-content:center;">Select Package</a>
+        </div>
+
+        <!-- Package 2: Captain — FEATURED -->
+        <div class="pkg-card featured reveal delay-2">
+          <div class="pkg-badge">Most Popular</div>
+          <div class="pkg-name">Package Two</div>
+          <h3 class="pkg-title">Captain</h3>
+          <p class="pkg-desc">Your full vessel identity. A custom name treatment and logo mark — everything you need to look iconic on the water.</p>
+          <div class="pkg-price">
+            <div class="price-wrap">
+              <span class="price-cur">$</span>
+              <span class="price-amt">699</span>
+            </div>
+            <p class="price-note" style="color:rgba(255,255,255,.4);">One-time payment · Delivered in 10–14 days</p>
+          </div>
+          <ul class="pkg-features">
+            <li>Everything in First Mate</li>
+            <li>Custom logo / brand mark design</li>
+            <li>Icon + wordmark variations</li>
+            <li>Brand color palette + guidelines</li>
+            <li>Hull & transom placement mockups</li>
+            <li>Social media profile kit</li>
+            <li>Priority design queue</li>
+          </ul>
+          <a href="#order" class="btn btn-primary btn-arrow" style="width:100%; justify-content:center;">Select Package</a>
+        </div>
+
+        <!-- Package 3: Commodore -->
+        <div class="pkg-card reveal delay-4">
+          <div class="pkg-name">Package Three</div>
+          <h3 class="pkg-title">Commodore</h3>
+          <p class="pkg-desc">The complete brand experience. Everything from naming and logo to crew gear — we handle it all, start to finish.</p>
+          <div class="pkg-price">
+            <div class="price-wrap">
+              <span class="price-cur">$</span>
+              <span class="price-amt">1,499</span>
+            </div>
+            <p class="price-note">One-time payment · Delivered in 21–28 days</p>
+          </div>
+          <ul class="pkg-features">
+            <li>Everything in Captain</li>
+            <li>Crew swag design (up to 3 items)</li>
+            <li>Custom hat + shirt design files</li>
+            <li>Embroidery & screen-print ready</li>
+            <li>Brand standards document</li>
+            <li>Flag &amp; burgee design</li>
+            <li>Dedicated brand strategist</li>
+            <li>Lifetime design support</li>
+          </ul>
+          <a href="#order" class="btn btn-dark btn-arrow" style="width:100%; justify-content:center;">Select Package</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPARISON TABLE ===== -->
+  <section class="section" style="background: var(--white);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow reveal">Compare</span>
+        <h2 class="reveal delay-1">What's included?</h2>
+      </div>
+      <table class="compare-table reveal">
+        <thead>
+          <tr>
+            <th style="width:40%;">Feature</th>
+            <th class="pkg-col" style="text-align:center;">First Mate<br><span style="font-family:var(--font-d); font-size:1.2rem; color:var(--navy); text-transform:none; letter-spacing:0; font-weight:300;">$299</span></th>
+            <th class="pkg-col" style="text-align:center; color:var(--gold);">Captain<br><span style="font-family:var(--font-d); font-size:1.2rem; color:var(--navy); text-transform:none; letter-spacing:0; font-weight:300;">$699</span></th>
+            <th class="pkg-col" style="text-align:center;">Commodore<br><span style="font-family:var(--font-d); font-size:1.2rem; color:var(--navy); text-transform:none; letter-spacing:0; font-weight:300;">$1,499</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Custom name typography</td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>3 initial concept directions</td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Unlimited revisions</td><td class="check"><span class="check-par">Rounds 1–3</span></td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Print-ready &amp; vinyl files</td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Logo / brand mark design</td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Brand color palette</td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Hull placement mockups</td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Social media kit</td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-yes">✓</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Crew swag design (hats, shirts)</td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Flag &amp; burgee design</td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Brand standards document</td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Dedicated brand strategist</td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-no">—</span></td><td class="check"><span class="check-yes">✓</span></td></tr>
+          <tr><td>Turnaround time</td><td>5–7 days</td><td>10–14 days</td><td>21–28 days</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== ADD-ONS ===== -->
+  <section class="section-sm" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow reveal">Add-Ons</span>
+        <h2 class="reveal delay-1">Customize your package.</h2>
+        <p class="reveal delay-2">Add individual services to any package at checkout.</p>
+      </div>
+      <div class="addon-grid">
+        <div class="addon-card reveal">
+          <h4>Rush Delivery</h4>
+          <p>Need it fast? Get your designs delivered in 48–72 hours with our rush service.</p>
+          <div class="addon-price">+$150</div>
+        </div>
+        <div class="addon-card reveal delay-2">
+          <h4>Additional Swag Items</h4>
+          <p>Add more gear items to your Commodore package — jackets, bags, tumblers, and more.</p>
+          <div class="addon-price">+$75 / item</div>
+        </div>
+        <div class="addon-card reveal delay-4">
+          <h4>Vinyl Installation Guide</h4>
+          <p>Step-by-step illustrated guide for applying your vinyl lettering professionally.</p>
+          <div class="addon-price">+$49</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section" style="background: var(--navy);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow reveal">How It Works</span>
+        <h2 class="reveal delay-1" style="color:var(--white);">Four steps to your<br><em style="color:var(--gold); font-style:italic;">perfect brand.</em></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-num">01</div>
+          <h4 style="color:var(--white);">Choose & Order</h4>
+          <p>Select your package, fill in your brief, and complete checkout. We'll confirm your project within 24 hours.</p>
+        </div>
+        <div class="process-step reveal delay-1">
+          <div class="step-num">02</div>
+          <h4 style="color:var(--white);">Creative Brief</h4>
+          <p>We send you a short questionnaire about your boat's personality, your style preferences, and inspiration.</p>
+        </div>
+        <div class="process-step reveal delay-2">
+          <div class="step-num">03</div>
+          <h4 style="color:var(--white);">Design &amp; Refine</h4>
+          <p>Your designer presents initial concepts. We revise until you love every detail — no rush, no shortcuts.</p>
+        </div>
+        <div class="process-step reveal delay-3">
+          <div class="step-num">04</div>
+          <h4 style="color:var(--white);">Deliver &amp; Launch</h4>
+          <p>Final files are delivered in all formats. Hit the water — your vessel has an identity it deserves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORDER FORM ===== -->
+  <section class="section" id="order" style="background: var(--white);">
+    <div class="container" style="max-width:900px;">
+      <div class="section-header center">
+        <span class="eyebrow reveal">Get Started</span>
+        <h2 class="reveal delay-1">Start your project today.</h2>
+        <p class="reveal delay-2">Fill in the form below and we'll reach out within 24 hours to confirm your package and get things moving.</p>
+      </div>
+
+      <form class="form-grid reveal delay-1" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="James" required />
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Whitfield" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="hello@yourboat.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(305) 555-0190" />
+        </div>
+        <div class="form-group">
+          <label for="pkg-select">Package</label>
+          <select id="pkg-select" name="package" required>
+            <option value="" disabled selected>Choose a package...</option>
+            <option value="First Mate">First Mate — $299</option>
+            <option value="Captain">Captain — $699 (Most Popular)</option>
+            <option value="Commodore">Commodore — $1,499</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="vessel">Vessel Type &amp; Length</label>
+          <input type="text" id="vessel" name="vessel" placeholder="42ft Sportfisher, Fishing Charter..." />
+        </div>
+        <div class="form-group full">
+          <label for="boatname">Desired Vessel Name (if known)</label>
+          <input type="text" id="boatname" name="boatname" placeholder="First Light, Storm Chaser, Meridian..." />
+        </div>
+        <div class="form-group full">
+          <label for="notes">Tell us about your boat &amp; style</label>
+          <textarea id="notes" name="notes" placeholder="Describe your boat, your personality on the water, any style references or inspirations..."></textarea>
+        </div>
+        <div class="form-group full" style="align-items:center;">
+          <button type="submit" class="btn btn-primary btn-arrow" style="align-self:flex-start; padding:1rem 3rem;">Submit &amp; Get Started</button>
+          <p style="font-size:0.8rem; color:var(--gray); margin-top:0.75rem;">We'll respond within 24 hours. No payment required until you approve the brief.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" style="background: var(--cream);">
+    <div class="container">
+      <div class="section-header center">
+        <span class="eyebrow reveal">FAQ</span>
+        <h2 class="reveal delay-1">Common questions.</h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>What file formats will I receive?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-a"><p>You'll receive a complete file package including SVG, AI, EPS (vector), PNG, and PDF files — ready for vinyl cutting, embroidery, screen printing, or any digital application. We include both full-color and single-color versions.</p></div>
+        </div>
+        <div class="faq-item reveal delay-1">
+          <div class="faq-q">
+            <span>Can I request changes after delivery?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-a"><p>Yes. All packages include revision rounds during the design process. After final delivery, First Mate clients get 1 year of minor change support, while Captain and Commodore clients receive lifetime support for adjustments to their brand files.</p></div>
+        </div>
+        <div class="faq-item reveal delay-2">
+          <div class="faq-q">
+            <span>Do you print and ship the vinyl or apparel?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-a"><p>Our packages deliver design files only — we don't handle physical production. However, we work with recommended vendors and can connect you with trusted partners for vinyl cutting, embroidery, and apparel printing who already know our file specifications.</p></div>
+        </div>
+        <div class="faq-item reveal delay-1">
+          <div class="faq-q">
+            <span>How does the design process work?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-a"><p>After submitting your order, you'll complete a brief creative questionnaire. Your dedicated designer will present 3 initial concepts, you'll select a direction and refine it through revision rounds until it's perfect. Then we package and deliver your final files.</p></div>
+        </div>
+        <div class="faq-item reveal delay-2">
+          <div class="faq-q">
+            <span>Do you work on boats of all sizes?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-a"><p>Absolutely. We've branded everything from 14-foot bass boats to 120-foot superyachts. The package you choose isn't tied to your vessel size — it's about how much of the brand experience you want. Every boat deserves great design.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-q">
+            <span>What if I don't have a boat name yet?</span>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-a"><p>No problem at all. Many clients come to us without a name decided. As part of our brief process, we can help you brainstorm names based on your boat type, your personality, and the feeling you want to project on the water. Naming consultation is included in all packages.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-banner">
+    <h2 class="reveal">Still deciding? Browse<br>our <em>portfolio first.</em></h2>
+    <div class="reveal delay-2">
+      <a href="work.html" class="btn btn-primary btn-arrow">See Our Work</a>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">WAKE<span>.</span></a>
+        <p>Crafting iconic identities for vessels of every size. From the first sketch to your hull — we brand your adventure.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="packages.html">Vessel Naming</a></li>
+          <li><a href="packages.html">Logo Design</a></li>
+          <li><a href="packages.html">Crew Swag</a></li>
+          <li><a href="packages.html">Full Branding</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="mailto:hello@wakedesign.co">hello@wakedesign.co</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Behance</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Wake Design Co. All rights reserved.</span>
+      <span>Crafted with passion for the water.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
