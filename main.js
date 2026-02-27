@@ -2,6 +2,10 @@
    WAKE DESIGN CO. — Main JavaScript
    ============================================= */
 
+// === Supabase config (anon/public key — safe to expose) ===
+const SUPABASE_URL = 'https://yezeeffhukxunuxfokyt.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_o80asJI2Jjgt0JQYwtxvRw_DcisqN43';
+
 (function () {
   'use strict';
 
@@ -158,20 +162,71 @@
     }, { passive: true });
   }
 
-  // === Package card selection ===
+  // === Package card → pre-fill form ===
   document.querySelectorAll('.pkg-card .btn').forEach(btn => {
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function (e) {
       const pkgName = this.closest('.pkg-card').querySelector('.pkg-title')?.textContent;
       if (pkgName) {
         const sel = document.querySelector('#pkg-select');
         if (sel) {
           sel.value = pkgName;
-          sel.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          sel.focus();
+          const form = document.querySelector('#order-form');
+          if (form) {
+            e.preventDefault();
+            form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setTimeout(() => sel.focus(), 600);
+          }
         }
       }
     });
   });
+
+  // === Order form → Supabase ===
+  const orderForm = document.querySelector('#order-form');
+  if (orderForm && typeof supabase !== 'undefined') {
+    const db = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    const successMsg = document.querySelector('#form-success');
+    const errorMsg   = document.querySelector('#form-error');
+    const submitBtn  = orderForm.querySelector('[type="submit"]');
+
+    orderForm.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      // Button loading state
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'Sending…';
+      submitBtn.disabled = true;
+      successMsg.style.display = 'none';
+      errorMsg.style.display   = 'none';
+
+      const data = {
+        first_name: orderForm.fname.value.trim(),
+        last_name:  orderForm.lname.value.trim(),
+        email:      orderForm.email.value.trim(),
+        phone:      orderForm.phone.value.trim() || null,
+        package:    orderForm.package.value || null,
+        vessel:     orderForm.vessel.value.trim() || null,
+        boat_name:  orderForm.boatname.value.trim() || null,
+        notes:      orderForm.notes.value.trim() || null,
+      };
+
+      const { error } = await db.from('leads').insert(data);
+
+      if (error) {
+        console.error('Supabase error:', error);
+        errorMsg.style.display = 'block';
+        errorMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled  = false;
+      } else {
+        successMsg.style.display = 'block';
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        orderForm.reset();
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled  = false;
+      }
+    });
+  }
 
   // === Smooth scroll for anchor links ===
   document.querySelectorAll('a[href^="#"]').forEach(a => {
