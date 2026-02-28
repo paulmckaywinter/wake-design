@@ -2,7 +2,7 @@
    WAKE DESIGN CO. — Styles
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap');
 
 /* === Variables === */
 :root {
@@ -19,8 +19,8 @@
   --text:      #111111;
   --text-2:    #555555;
 
-  --font-d: 'Cormorant Garamond', Georgia, serif;
-  --font-b: 'Inter', -apple-system, sans-serif;
+  --font-d: 'Fraunces', Georgia, serif;
+  --font-b: 'DM Sans', -apple-system, sans-serif;
 
   --nav-h:  80px;
   --ease:   cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -40,10 +40,10 @@ a { text-decoration: none; color: inherit; }
 
 /* === Typography === */
 h1, h2, h3, h4 { font-family: var(--font-d); line-height: 1.05; font-weight: 500; letter-spacing: -0.02em; }
-h1 { font-size: clamp(2.8rem, 6vw, 5.5rem); }
-h2 { font-size: clamp(2rem, 4vw, 3.8rem); }
-h3 { font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
-h4 { font-size: 1.2rem; font-family: var(--font-b); font-weight: 600; }
+h1 { font-size: clamp(2.6rem, 5.5vw, 5rem); }
+h2 { font-size: clamp(1.9rem, 3.8vw, 3.4rem); }
+h3 { font-size: clamp(1.3rem, 2.2vw, 2rem); }
+h4 { font-size: 1.1rem; font-family: var(--font-b); font-weight: 600; }
 
 .eyebrow {
   font-family: var(--font-b);
